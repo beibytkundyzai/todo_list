@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../constants/colors.dart';
 
 class ToDoItem extends StatelessWidget {
-  final  todo;
+  final todo;
   final onToDoChanged;
   final onDeleteItem;
 
@@ -40,8 +40,7 @@ class ToDoItem extends StatelessWidget {
           ),
         ),
         trailing: Container(
-          padding: EdgeInsets.all(0),
-          margin: EdgeInsets.symmetric(vertical: 12),
+          alignment: Alignment.center,
           height: 35,
           width: 35,
           decoration: BoxDecoration(
@@ -49,6 +48,8 @@ class ToDoItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           child: IconButton(
+            alignment: Alignment.center,
+            padding: EdgeInsets.zero, 
             color: Colors.white,
             iconSize: 18,
             icon: Icon(Icons.delete),
